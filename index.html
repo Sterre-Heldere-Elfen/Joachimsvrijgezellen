@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Joachims vrijgezellenfeest</title>
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="landing-screen">
+	<header class="site-header">
+		<a class="brand" href="index.html" aria-label="Joachims vrijgezellenfeest home">
+			<span class="brand-mark" aria-hidden="true">♔</span>
+			<span class="brand-name">Joachims<small>VRIJGEZELLENFEEST</small></span>
+		</a>
+		<nav aria-label="Hoofdnavigatie"><a class="active" href="index.html">Home</a></nav>
+	</header>
+	<main>
+		<section class="hero" aria-labelledby="welcome-title">
+			<div class="hero-copy">
+				<p class="eyebrow">Same legend, different status</p>
+				<h1 id="welcome-title">Joachims<br>Vrijgezellenfeest</h1>
+				<div class="accent-line"></div>
+				<p class="intro">Wie is Joachim als de boeken dichtgaan en de les erop zit?</p>
+				<div class="actions">
+					<button class="button button-primary" type="button" id="joachim-button">Ik ben Joachim <span aria-hidden="true">›</span></button>
+					<button class="button button-secondary" type="button" id="crew-button">Ik ben deel van de ploeg <span aria-hidden="true">›</span></button>
+				</div>
+			</div>
+			<div class="hero-photo" role="img" aria-label="Joachim met uitzicht op het meer en de bergen"></div>
+		</section>
+		<section class="anchor-section" id="joachim" aria-hidden="true"></section>
+		<section class="anchor-section" id="ploeg" aria-hidden="true"></section>
+	</main>
+	<footer class="site-footer">
+		<div class="footer-mark" aria-hidden="true">♔</div>
+		<p>Joachims vrijgezellenfeest</p>
+		<div class="footer-rule"></div>
+		<span>Good friends&nbsp;&nbsp; · &nbsp;&nbsp;Great plans&nbsp;&nbsp; · &nbsp;&nbsp;Better stories</span>
+	</footer>
+	</div>
+
+	<main class="dossier-app" id="dossier-app" hidden>
+		<header class="dossier-header">
+			<span class="agency-mark" aria-hidden="true">J</span>
+			<div><strong>JOACHIM</strong><span>PERSONEELSDOSSIER</span></div>
+			<span class="header-code">DOS-001 / 2026</span>
+		</header>
+		<div class="dossier-shell">
+			<section class="dossier-intro dossier-screen" id="dossier-intro" aria-labelledby="dossier-title">
+				<p class="case-label">Zaak J.</p>
+				<h2 id="dossier-title">DOSSIER<br><span>JOACHIM</span></h2>
+				<p class="case-status"><em>Onderzoek lopende</em></p>
+				<div class="intro-copy"><p class="lead">Welkom, Joachim.</p><p>De boeken zijn dicht. De les is gedaan.<br>Vanaf hier weet jij evenveel als wij willen dat je weet.</p><p>Voor we verder kunnen, hebben we enkele vragen.</p><p>Sommige zijn praktisch.<br>Sommige zijn belangrijk.<br>Over de rest hoef je je voorlopig geen zorgen te maken.</p></div>
+				<p class="instruction"><em>Antwoord eerlijk.</em><br><strong>Alles wat u antwoordt, kan en zal tegen u gebruikt worden.</strong></p>
+				<button class="file-button" type="button" id="open-dossier">Dossier openen <span aria-hidden="true">→</span></button>
+			</section>
+			<section class="dossier-quiz dossier-screen" id="dossier-quiz" hidden aria-labelledby="question-title">
+				<div class="progress-row"><span id="question-count">Vraag 01</span><span id="progress-percent">10%</span></div>
+				<div class="progress-track"><div class="progress-bar" id="progress-bar"></div></div>
+				<p class="case-label">Bewijsstuk <span id="evidence-count">01/08</span></p>
+				<h2 id="question-title"></h2>
+				<p class="question-text" id="question-text"></p>
+				<form id="question-form"></form>
+				<button class="next-button" type="submit" form="question-form"><span class="next-label">Volgende</span><span aria-hidden="true">→</span></button>
+				<p class="question-note">Je antwoord wordt toegevoegd aan het dossier.</p>
+				<p class="submit-error" id="submit-error" role="alert" hidden>De antwoorden konden niet worden verzonden. Probeer het opnieuw.</p>
+			</section>
+			<section class="dossier-complete dossier-screen" id="dossier-complete" hidden aria-labelledby="complete-title">
+				<p class="case-label">Dossier Joachim · Eindverslag</p>
+				<h2 id="complete-title">HET ONDERZOEK<br><span>IS GESLOTEN</span></h2>
+				<div class="final-report"><p><strong>Uw verklaring werd geregistreerd.</strong></p><p>De ploeg beschikt nu over voldoende informatie en zal zich hierover beraden.</p><p><strong>Uitspraak:</strong> nog niet bekend<br><strong>Datum zitting:</strong> GECLASSIFICEERD<br><strong>Locatie:</strong> GECLASSIFICEERD<br><strong>Programma:</strong> leuke poging, Joachim.</p><p>Tot nader order hoeft u niets te ondernemen.</p><p><strong>Vonnis volgt.</strong></p></div>
+				<p class="legal-note">Door uw verklaring in te dienen gaat u akkoord met voorwaarden die u om evidente redenen niet werden meegedeeld. De Ploeg behoudt zich het recht voor deze voorwaarden zonder voorafgaande kennisgeving te wijzigen, uit te breiden of volledig te verzinnen.</p>
+			</section>
+		</div>
+	</main>
+
+	<main class="crew-app" id="crew-app" hidden>
+		<header class="crew-header">
+			<button class="back-button" type="button" id="crew-back">← Hoofdpagina</button>
+			<div class="crew-code">OPERATIE JOACHIM <span>VERTROUWELIJK</span></div>
+		</header>
+		<section class="crew-gate" id="crew-gate" aria-labelledby="crew-gate-title">
+			<p class="case-label">Geautoriseerde toegang</p>
+			<h2 id="crew-gate-title">ALLEEN VOOR<br><span>DE PLOEG</span></h2>
+			<div class="gate-copy"><p><strong>Deze zone is uitsluitend voor leden van de ploeg.</strong></p><p>Wat hier staat, blijft hier.<br>Joachim weet voorlopig genoeg.<br>Laten we dat zo houden.</p></div>
+			<form id="crew-login-form" class="crew-login-form">
+				<label for="crew-password">Wachtwoord</label>
+				<input id="crew-password" type="password" autocomplete="off" placeholder="•••••••••••••" required>
+				<button class="file-button" type="submit">Toegang verkrijgen <span aria-hidden="true">→</span></button>
+				<p class="access-error" id="access-error" role="alert" hidden><strong>TOEGANG GEWEIGERD</strong><br>Mooie poging, Joachim.</p>
+			</form>
+		</section>
+
+		<section class="crew-dashboard" id="crew-dashboard" hidden>
+			<div class="dashboard-heading"><p class="case-label">Interne omgeving · Geautoriseerd</p><h2>OPERATIE<br><span>JOACHIM</span></h2><p class="dashboard-lead">Welkom bij de ploeg.</p></div>
+			<div class="notice"><strong>Vanaf hier geldt één belangrijke regel:</strong><br>Wat hier staat, blijft hier.<br><br>Wij regelen de rest. Joachim krijgt alleen te zien wat hij moet zien.</div>
+			<section class="dashboard-section status-grid-section"><p class="section-kicker">Status operatie</p><div class="status-grid"><div><span>Status</span><strong class="status-live" id="operation-status">Voorbereiding loopt</strong></div><div><span>Datum</span><strong id="operation-date">Nog te bepalen</strong></div><div><span>Bestemming</span><strong id="operation-destination">Gent</strong></div><div><span>Ploeg</span><strong id="crew-count">Nog niemand bevestigd</strong></div><div><span>Status Joachim</span><strong>Weet van niets.</strong></div><div><span>Voorbereiding</span><a class="preparation-link" id="operation-preparation" href="#plans">Leer het lied ‘Mag ik dan bij jou’ van Claudia de Breij om het uit volle borst mee te kunnen zingen <span aria-hidden="true">→</span></a></div></div></section>
+			<section class="dashboard-section crew-register"><p class="section-kicker">De ploeg</p><h3>Wie doet mee aan Operatie Joachim?</h3><p>Laat even weten of we op je kunnen rekenen.</p><form id="crew-register-form"><label for="crew-name">Naam</label><input id="crew-name" name="name" type="text" placeholder="Voornaam + achternaam" required><fieldset><legend>Ben je erbij?</legend><label><input type="radio" name="attendance" value="erbij" required> Ik ben erbij</label><label><input type="radio" name="attendance" value="twijfel"> Ik weet het nog niet</label><label><input type="radio" name="attendance" value="afwezig"> Ik kan helaas niet</label></fieldset><button class="file-button" type="submit">Bevestigen <span aria-hidden="true">→</span></button></form><p class="registration-message" id="registration-message" hidden></p><div class="crew-list"><h3>De ploeg</h3><p id="crew-summary">0 bevestigd · 0 twijfelaars · 0 afwezig</p><ul id="crew-members"></ul></div></section>
+			<section class="dashboard-section" id="plans"><p class="section-kicker">De plannen</p><ul class="plans-list" id="plans-list"><li>Karaoke</li><li>Bowlen</li><li>(Zelfgemaakte) FC De Kampioenenquiz</li></ul><p>Bestemming, activiteiten, vervoer en programma worden hier verder aangevuld.</p></section>
+			<section class="dashboard-section ideas-section"><p class="section-kicker">Andere ideeën</p><h3>Wat moeten we nog doen?</h3><p>Heeft iemand een goed idee voor Operatie Joachim? Zet het hier op tafel.</p><form id="idea-form"><label for="idea-name">Jouw naam</label><input id="idea-name" name="name" type="text" placeholder="Voornaam" required><label for="idea-text">Jouw idee</label><textarea id="idea-text" name="idea" placeholder="Ik stel voor dat we..." required></textarea><button class="file-button" type="submit">Idee insturen <span aria-hidden="true">→</span></button></form><p class="idea-message" id="idea-message" hidden></p><div class="idea-list"><h3>Ingezonden ideeën</h3><ul id="idea-items"></ul></div></section>
+			<section class="dashboard-section meme-corner"><p class="section-kicker">Joachims meme corner</p><h3>Bewijsmateriaal van bedenkelijke kwaliteit.</h3><p>Upload hier jullie beste Joachim-memes. De ploeg kijkt mee.</p><div class="featured-meme"><img src="Joachim-als-kampioen.png" alt="Joachim als kampioen"><p>Joachims guilty pleasure</p></div><form id="meme-form"><label class="upload-box" for="meme-file"><span class="upload-icon" aria-hidden="true">＋</span><strong>Afbeelding kiezen</strong><small>PNG, JPG of GIF · maximaal 5 MB</small></label><input id="meme-file" type="file" accept="image/png,image/jpeg,image/gif,image/webp" hidden><label for="meme-caption">Bijschrift</label><input id="meme-caption" type="text" maxlength="100" placeholder="Bijvoorbeeld: Joachim had één taak..."><button class="file-button" type="submit">Meme toevoegen <span aria-hidden="true">→</span></button><p class="meme-error" id="meme-error" role="alert" hidden></p></form><div class="meme-gallery" id="meme-gallery"></div></section>
+			<section class="dashboard-section joachim-file"><p class="section-kicker">Dossier Joachim</p><h3>Onderzoek lopende</h3><p>Joachim heeft <strong>0/8</strong> bewijsstukken afgelegd.</p><p class="muted">De antwoorden verschijnen hier zodra Joachim zijn verklaring heeft ingediend.</p></section>
+			<section class="dashboard-section command-center"><p class="section-kicker">Commandocentrum</p><h3>Alleen voor organisatoren</h3><p>Toegang uitsluitend voor de organisatie van Operatie Joachim.</p><button class="classified" id="organizer-access" type="button">VERTROUWELIJK</button><form class="organizer-form" id="organizer-form" hidden><label for="organizer-password">Nieuw wachtwoord</label><input id="organizer-password" type="password" autocomplete="off" placeholder="••••••••••" required><button class="file-button" type="submit">Toegang verkrijgen <span aria-hidden="true">→</span></button><p class="organizer-error" id="organizer-error" role="alert" hidden>Toegang geweigerd.</p></form><div class="organizer-content" id="organizer-content" hidden><p class="access-granted"><strong>TOEGANG VERLEEND</strong><br>Het commandocentrum is geopend.</p><p>Hier kunnen planning, deelnemersbeheer, kosten, vervoer en ideeën beheerd worden.</p></div></section>
+			<footer class="crew-footer"><strong>OPERATIE JOACHIM — VERTROUWELIJK</strong><small>Bespreek niets met het onderwerp van dit dossier.</small></footer>
+		</section>
+	</main>
+	<main class="organizer-app" id="organizer-app" hidden>
+		<header class="organizer-header"><button class="back-button" type="button" id="organizer-back">← Operatie Joachim</button><span>COMMANDOCENTRUM · VERTROUWELIJK</span></header>
+		<section class="organizer-page"><p class="case-label">Alleen voor organisatoren</p><h2>COMMANDO<br><span>CENTRUM</span></h2><p class="organizer-lead">Toegang verleend.</p><div class="organizer-panel"><strong>OPERATIE JOACHIM</strong><p>Hier kunnen planning, deelnemersbeheer, kosten, vervoer en ideeën beheerd worden.</p><div class="organizer-items"><div><span>Status</span><strong id="organizer-status">Voorbereiding loopt</strong></div><div><span>Datum</span><strong id="organizer-date">Nog te bepalen</strong></div><div><span>Bestemming</span><strong id="organizer-destination">Gent</strong></div><div><span>Plannen</span><strong id="organizer-plans">Karaoke · bowlen · FC De Kampioenenquiz</strong></div><div><span>Voorbereiding</span><strong id="organizer-preparation">Leer het lied ‘Mag ik dan bij jou’ van Claudia de Breij om het uit volle borst mee te kunnen zingen</strong></div></div></div><form class="settings-form" id="settings-form"><p class="section-kicker">Operatiegegevens aanpassen</p><label for="settings-status">Status</label><input id="settings-status" name="status" type="text" required><label for="settings-date">Datum</label><input id="settings-date" name="date" type="text" placeholder="Bijvoorbeeld: zaterdag 12 juli" required><label for="settings-destination">Bestemming</label><input id="settings-destination" name="destination" type="text" required><label for="settings-preparation">Voorbereiding</label><textarea id="settings-preparation" name="preparation" required></textarea><label for="settings-plans">Plannen <small>(één plan per regel)</small></label><textarea id="settings-plans" name="plans" required></textarea><button class="file-button" type="submit">Wijzigingen opslaan <span aria-hidden="true">→</span></button><p class="settings-message" id="settings-message" hidden></p></form><p class="organizer-warning">Deze omgeving is uitsluitend voor de organisatie. Bespreek niets met het onderwerp van dit dossier.</p></section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
